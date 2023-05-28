@@ -8,8 +8,12 @@ const inputText = ref('')
 const selectedOperation = ref(0)
 
 const outputText = computed(() => {
-    const operation = StringOperations[selectedOperation.value]
-    return operation ? operation.fn(inputText.value) : ''
+    try {
+        const operation = StringOperations[selectedOperation.value]
+        return operation ? operation.fn(inputText.value) : ''
+    } catch (e) {
+        return ''
+    }
 })
 
 // workaround to fix ripple in 'script setup' components
