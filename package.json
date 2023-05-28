@@ -8,6 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.0.1",
+    "@fontsource/raleway": "^5.0.1",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.29.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
